@@ -1,0 +1,6 @@
+/bin-debug/*
+/bin-release/*
+
+# OS crap
+.DS_Store
+thumbs.db
