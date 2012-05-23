@@ -27,7 +27,7 @@ package
 	import org.casalib.util.NavigateUtil;
 	import org.casalib.util.StageReference;
 	
-	[SWF(width="495", height="155", backgroundColor="#FFFFFF", frameRate="31")]
+	[SWF(width="500", height="158", backgroundColor="#FFFFFF", frameRate="31")]
 	
 	public class flashCarreiras extends CasaSprite
 	{
@@ -57,7 +57,7 @@ package
 			this._app['vars']={};
 			this._app['vars']['w'] = stage.stageWidth;
 			this._app['vars']['h'] = stage.stageHeight;
-			// Lingua que será renderizada
+			// Lingua que será renderizada (pt || en)
 			this._app['vars']['language'] = 'en';
 			// Tempo de troca
 			this._app['vars']['tempoTroca'] = 10;
@@ -65,6 +65,8 @@ package
 			this._app['vars']['fontSize'] = 10;
 			this._app['vars']['font'] = new Arial();
 			this._app['vars']['branco'] = '0xFFFFFF';
+			this._app['vars']['verde'] = '0x008F83';
+			this._app['vars']['laranja'] = '0xE8A605';
 			
 			// Master
 			masterContent = new CasaSprite();
@@ -113,8 +115,14 @@ package
 			for( var i:String in lista)
 			{
 				navi.push(new Nav(_dispatcher,{txt:(uint(i)+1),pos:uint(i)}));
-				lista[uint(i)].alpha=0;
-				lista[uint(i)].visible=false;
+				lista[uint(i)].alpha = 0;
+				lista[uint(i)].visible = false;
+				// Fix size
+				/*
+				lista[uint(i)].width = this._app['vars']['w'];
+				lista[uint(i)].height = this._app['vars']['h'];
+				//*/
+				//
 				masterContent.addChild(lista[uint(i)]);
 			}
 			
