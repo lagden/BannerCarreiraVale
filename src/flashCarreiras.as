@@ -27,7 +27,7 @@ package
 	import org.casalib.util.NavigateUtil;
 	import org.casalib.util.StageReference;
 	
-	[SWF(width="500", height="158", backgroundColor="#FFFFFF", frameRate="31")]
+	[SWF(width="499", height="158", backgroundColor="#FFFFFF", frameRate="31")]
 	
 	public class flashCarreiras extends CasaSprite
 	{
@@ -78,7 +78,7 @@ package
 					new En1(),
 					new En2(),
 					new En3(),
-					new En4(),
+					//new En4(),
 					new En5()
 				];
 				
@@ -86,7 +86,7 @@ package
 					"/en-us/carreiras/depoimentos/Pages/bojan-blasevic.aspx",
 					"/en-us/carreiras/depoimentos/Pages/lindsay-moreau-verlaan-.aspx",
 					"/en-us/carreiras/depoimentos/Pages/kristina-fransiska-muntu.aspx",
-					"/en-us/carreiras/depoimentos/Pages/elisa-raquel-vieira-pinto-.aspx",
+					//"/en-us/carreiras/depoimentos/Pages/elisa-raquel-vieira-pinto-.aspx",
 					"/en-us/carreiras/depoimentos/Pages/jorge-eduardo-plaza-jofre.aspx"
 				];
 			}
@@ -94,7 +94,7 @@ package
 			{
 				// PT
 				lista=[
-					new Pt1(),
+					//new Pt1(),
 					new Pt2(),
 					new Pt3(),
 					new Pt4(),
@@ -102,7 +102,7 @@ package
 				];
 				
 				lnk = [
-					"/pt-br/carreiras/depoimentos/Paginas/elisa-raquel-vieira-pinto-.aspx",
+					//"/pt-br/carreiras/depoimentos/Paginas/elisa-raquel-vieira-pinto-.aspx",
 					"/pt-br/carreiras/depoimentos/Paginas/bojan-blasevic.aspx",
 					"/pt-br/carreiras/depoimentos/Paginas/kristina-fransiska-muntu.aspx",
 					"/pt-br/carreiras/depoimentos/Paginas/lindsay-moreau-verlaan-.aspx",
